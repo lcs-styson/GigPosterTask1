@@ -32,11 +32,21 @@ let black = Color(hue: 999, saturation: 999, brightness: 0, alpha: 999)
 canvas.fillColor = black
 canvas.drawEllipse(at: Point(x: 200, y: 200), width: 30000, height: 3000)
 // uhhhhh make the circles??
+// green circles from colomn 6 looped to the right
 canvas.fillColor = limeGreen
 for y in stride(from: 200, through: 400, by: 50) {
-    
+for x in stride(from: 200, through: 400, by: 50) {
+
     // Circle Time
-    canvas.drawEllipse(at: Point(x: 200, y: y), width: 40, height: 40)
+    canvas.drawEllipse(at: Point(x: x, y: y), width: 40, height: 40)
+}
+}
+for y in stride(from: 0, through: 0, by: 50) {
+    for x in stride(from: 0, through: 0, by: 50) {
+        canvas.drawEllipse(at: Point(x: x, y: y) , width: 40, height: 40)
+        
+        
+    }
 }
 /*:
  ## Use Source Control
