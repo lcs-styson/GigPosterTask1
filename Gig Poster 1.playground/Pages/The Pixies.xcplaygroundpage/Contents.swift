@@ -41,13 +41,13 @@ for x in stride(from: 200, through: 400, by: 50) {
     canvas.drawEllipse(at: Point(x: x, y: y), width: 40, height: 40)
 }
 }
-for y in stride(from: 0, through: 0, by: 50) {
-    for x in stride(from: 0, through: 0, by: 50) {
-        canvas.drawEllipse(at: Point(x: x, y: y) , width: 40, height: 40)
+//for y in stride(from: 50, through: 0, by: 50) {
+    for x in stride(from: 0, through: 400, by: 50) {
+        canvas.drawEllipse(at: Point(x: x, y: 0) , width: 40, height: 40)
         
         
     }
-}
+
 /*:
  ## Use Source Control
  
