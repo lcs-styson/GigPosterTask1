@@ -33,10 +33,10 @@ canvas.fillColor = black
 canvas.drawEllipse(at: Point(x: 200, y: 200), width: 30000, height: 3000)
 // uhhhhh make the circles??
 canvas.fillColor = limeGreen
-for y in stride(from: 0, through: 400, by: 50) {
+for y in stride(from: 200, through: 400, by: 50) {
     
     // Circle Time
-    canvas.drawLine(from: Point(x: 100, y: y), to: Point(x: 300, y: 5))
+    canvas.drawEllipse(at: Point(x: 200, y: y), width: 40, height: 40)
 }
 /*:
  ## Use Source Control
