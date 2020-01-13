@@ -1,5 +1,3 @@
-//: # Gig Poster 1
-//: The following two statements are required to make the playground run. Please do not remove.
 import Cocoa
 import PlaygroundSupport
 /*:
@@ -27,10 +25,19 @@ let canvas = Canvas(width: 400, height: 600)
 // COLORS
 let offWhite = Color(hue: 81, saturation: 5, brightness: 88, alpha: 100)
 let limeGreen = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
+let black = Color(hue: 999, saturation: 999, brightness: 0, alpha: 999)
 
 // Begin your solution here...
-
-
+// create background
+canvas.fillColor = black
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 30000, height: 3000)
+// uhhhhh make the circles??
+canvas.fillColor = limeGreen
+for y in stride(from: 0, through: 400, by: 50) {
+    
+    // Circle Time
+    canvas.drawLine(from: Point(x: 100, y: y), to: Point(x: 300, y: 5))
+}
 /*:
  ## Use Source Control
  
